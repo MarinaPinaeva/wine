@@ -1,0 +1,67 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url(../img/main_bg.jpg) no-repeat 50%/ cover;
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+    &__adr {
+        color: $main-color;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150%;
+    }
+    &__phone {
+        color: $main-color;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150%;
+        text-decoration: none;
+    }
+
+    &__menu {
+        display: flex;
+        padding-top: 20px;
+        list-style-type: none;
+        :last-child {
+            border-right: none;
+        }
+    }
+    &__item {
+        width: 1110px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        border-top: 1px solid #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        text-align: center;
+    }
+    &__link {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $main-color;
+        text-decoration: none;
+    }
+    &__buttons {
+        padding: 580px 0 150px 0;
+        text-align: center;
+    }
+    &__btn {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+    &__btn_right {
+        margin-left: 30px;
+        background: #998431;
+    }
+}
