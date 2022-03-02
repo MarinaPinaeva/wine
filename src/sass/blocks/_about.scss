@@ -1,0 +1,27 @@
+.about {
+    min-height: 100vh;
+    background: $background-color;
+    &__border {
+        display: inline-block;
+        margin: 100px 0;
+        border: 3px solid #C4C4C4;
+    }
+    &__wrapper {
+        padding: 60px 187px;
+    }
+    &__title {
+        width: 736px;
+        height: 54px;
+    }
+    &__divider {
+        margin: 40px auto;
+    }
+    &__descr {
+        margin: 40px auto 0 auto;
+        text-align: center;
+    }
+    &__photo {
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+}
