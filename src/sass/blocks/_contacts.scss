@@ -1,0 +1,94 @@
+.contacts {
+    min-height: 100vh;
+    background: $background-color;
+    &__border {
+        display: inline-block;
+        margin: 130px 0 100px 0;
+        border: 3px solid #C4C4C4;
+    }
+    &__heading {
+        margin-top: -35px;
+        transform: translateX(50%);
+        width: 450px;
+        background: #282828;
+        padding: 10px 50px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__image {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+    }
+    &__photo-left {
+        width: 260px;
+        height: 260px;
+        margin-left: -34px;
+        transform: translateY(-55%);
+        
+    }
+    &__photo-right {
+        width: 260px;
+        height: 200px;
+        transform: translateY(-65%);
+        margin-right: -53px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 540px;
+        grid-template-rows: 75px 100px;
+        row-gap: 80px;
+        padding: 0 285px;
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 255px);
+        grid-template-rows: repeat(2, 30px);
+        justify-content: space-between;
+        row-gap: 40px;
+    }
+    &__textarea {
+        grid-column: 1/3;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            background: $background-color;
+            border: none;
+            border-bottom: 1px solid $main-color;
+            outline: none;
+            color: $main-color;
+            &::placeholder {
+                color: $main-color;
+            }
+        }
+    }
+    &__input {
+        input {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            background: #282828;
+            border: none;
+            border-bottom: 1px solid $main-color;
+            outline: none;
+            color: $main-color;
+            &::placeholder {
+                color: $main-color;
+            }
+        }
+    }
+    &__btn {
+        margin: 50px 285px 80px 285px;
+        border: 1px solid #FFFFFF;
+        width: 540px;
+        background: none;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+}

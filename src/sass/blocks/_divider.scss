@@ -3,4 +3,12 @@
     height: 1px;
     background: $main-color;
     margin: 30px 0 auto 0;
+    &__black {
+        background: $text-color;
+        width: 160px;
+        height: 1px;
+    }
+    &__contacts {
+        margin: 30px auto auto auto;
+    }
 }

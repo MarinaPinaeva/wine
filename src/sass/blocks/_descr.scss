@@ -4,4 +4,8 @@
     font-size: 16px;
     line-height: 150%;
     color: $main-color;
+    &_fs14-black {
+        font-size: 14px;
+        color: $text-color;
+    }
 }
