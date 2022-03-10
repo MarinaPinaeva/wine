@@ -1,9 +1,9 @@
 .contacts {
-    min-height: 100vh;
+    padding-top: 130px;
     background: $background-color;
     &__border {
         display: inline-block;
-        margin: 130px 0 100px 0;
+        margin-bottom: 100px;
         border: 3px solid #C4C4C4;
     }
     &__heading {
@@ -79,9 +79,16 @@
             }
         }
     }
+    &__buttons {
+        :hover {
+            background-color: $main-color;
+            color: $background-color;
+            transition: all 1s;
+        }
+    }
     &__btn {
         margin: 50px 285px 80px 285px;
-        border: 1px solid #FFFFFF;
+        border: 1px solid $main-color;
         width: 540px;
         background: none;
         font-family: "Montserrat";

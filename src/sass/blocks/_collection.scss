@@ -1,9 +1,9 @@
 .collection {
-    min-height: 100vh;
+    padding-top: 80px;
     background: $background-color-2;
     &__border {
         display: inline-block;
-        margin: 80px 0;
+        margin-bottom: 80px;
         padding: 60px 0;
         border-top: 1px solid #998431;
         border-bottom: 1px solid #998431;
