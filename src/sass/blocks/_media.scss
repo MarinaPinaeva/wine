@@ -2,6 +2,11 @@
     .container {
         max-width: 960px;
     }
+    .about {
+        &__wrapper {
+            padding: 60px 100px;
+        }
+    }
 }
 
 
@@ -9,9 +14,17 @@
     .container {
         max-width: 720px;
     }
+    .title {
+        font-size: 35px;
+    }
     .promo {
         &__buttons {
             padding: 740px 0 130px 0;
+        }
+    }
+    .about {
+        &__divider {
+            margin: 35px auto;
         }
     }
 }
@@ -20,6 +33,14 @@
 @media (max-width: 767px) {
     .container {
         max-width: 540px;
+    }
+    .title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .descr {
+        line-height: 23px;
+        font-size: 15px;
     }
     .button {
         width: 190px;
@@ -32,7 +53,20 @@
         &__adr, &__phone, &__link {
             font-size: 12px;
         }
-
+    }
+    .about {
+        padding-top: 80px;
+        &__border {
+            margin-bottom: 80px;
+        }
+        &__wrapper {
+            padding: 40px 70px;
+        }
+        &__photo {
+            margin: 40px auto 0 auto;
+            width: 140px;
+            height: 140px;
+        }
     }
 }
 
@@ -41,6 +75,14 @@
     .container {
         width: 100%;
         padding: 0 15px;
+    }
+    .title {
+        font-size: 23px;
+        line-height: 32px;
+    }
+    .descr {
+        line-height: 20px;
+        font-size: 13px;
     }
     .button {
         width: 150px;
@@ -60,6 +102,22 @@
         }
         &__buttons {
             padding: 500px 0 100px 0;
+        }
+    }
+    .about {
+        &__wrapper {
+            padding: 20px 38px;
+        }
+        &__divider {
+            margin: 25px auto;
+        }
+        &__descr {
+            margin: 0;
+        }
+        &__photo {
+            margin: 25px auto 0 auto;
+            width: 110px;
+            height: 110px;
         }
     }
 }
