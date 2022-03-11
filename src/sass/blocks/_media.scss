@@ -1,3 +1,11 @@
+@media (min-width: 1201px) {
+    .collection {
+        &__btn-767 {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -5,6 +13,35 @@
     .about {
         &__wrapper {
             padding: 60px 100px;
+        }
+    }
+    .collection {
+        &__wrapper {
+            grid-template-columns: 430px 430px;
+            column-gap: 100px;
+        }
+        &__table {
+            grid-template-columns: 430px;
+        }
+        &__table-item {
+            ::before {
+                width: 430px;
+            }
+        }
+        &__image {
+            grid-template-columns: repeat(2,195px);
+            gap: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__img {
+            grid-column: 1/3;
+        }
+        &__btn-767 {
+            display: none;
         }
     }
 }
@@ -15,7 +52,17 @@
         max-width: 720px;
     }
     .title {
-        font-size: 35px;
+        &_fs36 {
+            font-size: 35px;
+        }
+        &_fs18-black {
+            font-size: 17px;
+        }
+    }
+    .descr {
+        &_fs14-black {
+            font-size: 13px;
+        }
     }
     .promo {
         &__buttons {
@@ -27,6 +74,48 @@
             margin: 35px auto;
         }
     }
+    .collection {
+        &__wrapper {
+            grid-template-columns: 370px 300px;
+            column-gap: 50px;
+        }
+        &__table {
+            grid-template-columns: 370px;
+            :after {
+                left: 63px;
+            }
+        }
+        &__table-item {
+            grid-template-columns: 55px 290px;
+            column-gap: 25px;
+            ::before {
+                width: 370px;
+            }
+        }
+        &__btn {
+            width: 240px;
+        }
+        &__btn-767 {
+            display: none;
+        }
+        &__image {
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(3, 240px);
+            gap: 0;
+            row-gap: 20px;
+        }
+        &__img {
+            grid-column: 1/2;
+        }
+        &__img-right {
+            grid-row: 3/4;
+            grid-column: unset;
+        }
+        &__img-left {
+            grid-row: 2/3;
+            grid-column: unset;
+        }
+    }
 }
 
 
@@ -35,20 +124,24 @@
         max-width: 540px;
     }
     .title {
-        font-size: 32px;
-        line-height: 40px;
+        &_fs36 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &_fs18-black {
+            font-size: 20px;
+        }
     }
     .descr {
         line-height: 23px;
         font-size: 15px;
     }
-    .button {
-        width: 190px;
-        height: 45px;
-    }
+
     .promo {
         &__btn {
             font-size: 15px;
+            width: 190px;
+            height: 45px;
         }
         &__adr, &__phone, &__link {
             font-size: 12px;
@@ -68,6 +161,52 @@
             height: 140px;
         }
     }
+    .collection {
+        padding-top: 60px;
+        &__border {
+            margin-bottom: 60px;
+        }
+        &__wrapper {
+            grid-template-columns: 540px;
+        }
+        &__table {
+            grid-template-columns: 540px;
+            ::after {
+                left: 103px;
+            }
+        }
+        &__table-item {
+            grid-template-columns: 100px 400px;
+            column-gap: 40px;
+            ::before {
+                width: 540px;
+            }
+        }
+        &__btn {
+            display: none;
+        }
+        &__btn-767 {
+            display: block;
+            width: 540px;
+        }
+        &__image {
+            margin: 30px 0;
+            grid-template-columns: repeat(2, 260px);
+            grid-template-rows: repeat(2, 240px);
+            gap: 20px;
+        }
+        &__img {
+            grid-column: 1/3;
+        }
+        &__img-right {
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        &__img-left {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+    }
 }
 
 
@@ -77,16 +216,25 @@
         padding: 0 15px;
     }
     .title {
-        font-size: 23px;
-        line-height: 32px;
+        &_fs36 {
+            font-size: 23px;
+            line-height: 32px;
+        }
+        &_fs36-black {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &_fs18-black {
+            font-size: 13px;
+        }
+        &_fs16 {
+            font-size: 14px;
+            line-height: 15px;
+        }
     }
     .descr {
         line-height: 20px;
         font-size: 13px;
-    }
-    .button {
-        width: 150px;
-        height: 40px;
     }
     .promo {
         &__adr, &__phone, &__link {
@@ -95,6 +243,8 @@
         &__btn {
             font-size: 12px;
             line-height: 15px;
+            width: 150px;
+            height: 40px;
         }
         &__btn_right {
             margin-left: 0;
@@ -118,6 +268,51 @@
             margin: 25px auto 0 auto;
             width: 110px;
             height: 110px;
+        }
+    }
+    .collection {
+        &__wrapper {
+            grid-template-columns: 100%;
+        }
+        &__info {
+            row-gap: 20px;
+        }
+        &__table {
+            grid-template-columns: 290px;
+            justify-content: center;
+            ::after {
+                left: 55px;
+            }
+        }
+        &__table-item {
+            grid-template-columns: 50px 220px;
+            column-gap: 20px;
+            grid-template-rows: 27px 27px;
+            row-gap: 3px;
+            ::before {
+                width: 290px;
+            }
+        }
+        &__table-title {
+            line-height: 30px;
+        }
+        &__table-old {
+            font-size: 13px;
+        }
+        &__table-descr {
+            line-height: 13px;
+        }
+        &__image {
+            grid-template-columns: repeat(2, 140px);
+            gap: 10px;
+            justify-content: center;
+        }
+        &__btn-767 {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 290px;
+            font-size: 14px;
         }
     }
 }
