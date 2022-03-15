@@ -7,11 +7,16 @@
         border: 3px solid #C4C4C4;
     }
     &__heading {
+        position: relative;
         margin-top: -35px;
-        transform: translateX(50%);
-        width: 450px;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 490px;
         background: #282828;
         padding: 10px 50px;
+    }
+    &__divider {
+        margin: 30px auto auto auto;
     }
     &__title {
         text-align: center;
@@ -40,6 +45,9 @@
         grid-template-rows: 75px 100px;
         row-gap: 80px;
         padding: 0 285px;
+    }
+    &__descr {
+        text-align: center;
     }
     &__form {
         display: grid;

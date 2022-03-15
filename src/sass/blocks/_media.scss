@@ -44,6 +44,31 @@
             display: none;
         }
     }
+    .contacts {
+        overflow: hidden;
+        &__border {
+            width: 960px;
+        }
+        &__photo-left {
+            width: 230px;
+            height: 230px;
+            margin-left: unset;
+            transform: translateY(-57%) translateX(-8%);
+        }
+        &__photo-right {
+            width: 230px;
+            height: 170px;
+            transform: translateY(-70%) translateX(-2%);
+        }
+        &__wrapper {
+            grid-template-columns: 555px;
+            padding: 0 200px;
+        }
+        &__btn {
+            width: 555px;
+            margin: 50px 200px 80px 200px;
+        }
+    }
 }
 
 
@@ -114,6 +139,41 @@
         &__img-left {
             grid-row: 2/3;
             grid-column: unset;
+        }
+    }
+    .contacts {
+        &__border {
+            width: 720px;
+        }
+        &__heading {
+            width: 425px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__photo-left {
+            width: 215px;
+            height: 215px;
+            transform: translateY(-55%) translateX(-12%);
+            margin-left: unset;
+        }
+        &__photo-right {
+            width: 215px;
+            height: 155px;
+        }
+        &__wrapper {
+            grid-template-columns: 500px;
+            padding: 0 110px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+        &__form {
+            grid-template-columns: repeat(2,235px);
+        }
+        &__btn {
+            width: 500px;
+            margin: 50px 104px 80px 110px;
         }
     }
 }
@@ -205,6 +265,57 @@
         &__img-left {
             grid-row: 2/3;
             grid-column: 1/2;
+        }
+    }
+    .contacts {
+        padding-top: 80px;
+        &__border {
+            width: 540px;
+            border: 2px solid #c4c4c4;
+        }
+        &__heading {
+            width: 330px;
+            padding: 10px 30px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__photo-left {
+            width: 150px;
+            height: 150px;
+            transform: translateY(-65%) translateX(-13%);
+        }
+        &__photo-right {
+            width: 170px;
+            height: 100px;
+            transform: translateY(-90%) translateX(-3%);
+        }
+        &__wrapper {
+            grid-template-columns: 400px;
+            padding: 0 70px;
+            row-gap: 60px;
+        }
+        &__descr {
+            line-height: 22px;
+            font-size: 12px;
+        }
+        &__form {
+            grid-template-columns: repeat(2,190px);
+        }
+        &__input {
+            input {
+                font-size: 10px;
+            }
+        }
+        &__textarea {
+            textarea {
+                font-size: 10px;
+            }
+        }
+        &__btn {
+            width: 400px;
+            margin: 50px 64px 80px 70px;
+            font-size: 14px;
         }
     }
 }
@@ -313,6 +424,73 @@
             transform: translateX(-50%);
             width: 290px;
             font-size: 14px;
+        }
+    }
+    .contacts {
+        padding-top: 60px;
+        &__border {
+            width: unset;
+            border: 1px solid #c4c4c4;
+            margin-bottom: 60px;
+        }
+        &__heading {
+            width: 195px;
+            padding: 5px 15px;
+            margin-top: -25px;
+        }
+        &__divider {
+            margin: 20px auto auto auto;
+        }
+        &__title {
+            font-size: 15px;
+
+        }
+        &__photo-left {
+            width: 90px;
+            height: 90px;
+            transform: translateY(-69%) translateX(-13%);
+        }
+        &__photo-right {
+            width: 90px;
+            height: 90px;
+            transform: translateY(-89%) translateX(-38%);
+        }
+        &__wrapper {
+            grid-template-columns: 100%;
+            grid-template-rows: 75px 140px;
+            padding: 0 20px;
+            row-gap: 40px;
+        }
+        &__descr {
+            line-height: 18px;
+            font-size: 12px;
+        }
+        &__form {
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3, 30px);
+            row-gap: 25px;
+        }
+        &__input {
+            input {
+                font-size: 8px;
+            }
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+            textarea {
+                font-size: 8px;
+                line-height: 25px;
+            }
+        }
+        &__btn {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 250px;
+            margin: 30px 0 40px 0;
+            font-size: 13px;
+            height: 40px;
         }
     }
 }
