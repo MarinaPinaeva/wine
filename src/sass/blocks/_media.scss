@@ -69,6 +69,24 @@
             margin: 50px 200px 80px 200px;
         }
     }
+    .footer {
+        &__item {
+            width: 960px;
+        }
+        &__item-start {
+            padding-left: 15px;
+        }
+        &__item-end {
+            padding-right: 29px;
+        }
+        &__border {
+            width: 960px;
+        }
+        &__place-start {
+            padding-left: 45px;
+            padding-right: 30px;
+        }
+    }
 }
 
 
@@ -174,6 +192,31 @@
         &__btn {
             width: 500px;
             margin: 50px 104px 80px 110px;
+        }
+    }
+    .footer {
+        &__item {
+            width: 720px;
+        }
+        &__item-start {
+            padding-left: 10px;
+        }
+        &__item-end {
+            padding-right: 25px;
+        }
+        &__link {
+            font-size: 11px;
+            line-height: 22px;
+        }
+        &__border {
+            width: 720px;
+            font-size: 10px;
+            line-height: 23px;
+            padding-top: 18px;
+            padding-bottom: 11px;
+        }
+        &__place-start {
+            padding-left: 30px;
         }
     }
 }
@@ -316,6 +359,49 @@
             width: 400px;
             margin: 50px 64px 80px 70px;
             font-size: 14px;
+        }
+    }
+    .footer {
+        padding: 40px 0;
+        &__menu {
+            flex-wrap: wrap;
+            :nth-child(5) {
+                border-bottom: unset;
+            }
+            :nth-child(6) {
+                border-bottom: unset;
+            }
+            :nth-child(7) {
+                border-bottom: unset;
+            }
+        }
+        &__item {
+            flex-basis: 135px;
+            border-top: unset;
+        }
+        &__link {
+            font-size: 13px;
+        }
+        &__contacts {
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        &__border {
+            flex-basis: 270px;
+            font-size: 12px;
+        }
+        &__place-start {
+            border-left: 1px solid #fff;
+            border-top: 1px solid #fff;
+        }
+        &__phone {
+            border-top: 1px solid #fff;
+        }
+        &__social {
+            border-left: 1px solid #fff;
+        }
+        &__website {
+            border-right: 1px solid #fff;
         }
     }
 }
@@ -491,6 +577,45 @@
             margin: 30px 0 40px 0;
             font-size: 13px;
             height: 40px;
+        }
+    }
+    .footer {
+        padding: 30px 0;
+        &__menu {
+            :nth-child(5) {
+                border-bottom: 1px solid #fff;;
+            }
+            :nth-child(6) {
+                border-bottom: 1px solid #fff;;
+            }
+            :nth-child(7) {
+                border-bottom: 1px solid #fff;;
+            }
+        }
+        &__item {
+            flex-basis: 255px;
+        }
+        &__item-start {
+            padding-left: 0px;
+        }
+        &__item-end {
+            padding-right: 0px;
+        }
+        &__contacts {
+            margin-top: 35px;
+        }
+        &__border {
+            padding-top: 16px;
+            padding-bottom: 14px;
+        }
+        &__place-start {
+            border-bottom: unset;
+        }
+        &__phone {
+            border-left: 1px solid #fff;
+        }
+        &__website {
+            border-left: 1px solid #fff;
         }
     }
 }

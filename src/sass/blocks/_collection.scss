@@ -71,6 +71,10 @@
         grid-template-columns: repeat(2, 255px);
         grid-template-rows: 500px 228px;
         gap: 30px;
+        :hover {
+            transform: scale(1.05);
+            transition: all 0.5s;
+        }
     }
     &__img-right {
         grid-row: 2/3;
@@ -80,9 +84,17 @@
         grid-row: 2/3;
         grid-column: 1/2;
     }
+    &__buttons {
+        :hover {
+            background-color: #282828;
+            color: #fff;
+            transition: all 1s;
+        }
+    }
     &__btn {
         width: 254px;
         background: #998431;
         letter-spacing: 0.1em;
+
     }
 }

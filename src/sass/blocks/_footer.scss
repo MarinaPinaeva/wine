@@ -30,9 +30,6 @@
     &__contacts {
         display: flex;
         justify-content: space-around;
-        :last-child {
-            border-right: none;
-        }
     }
     &__border {
         width: 1110px;
@@ -52,6 +49,14 @@
     &__place-start {
         padding-left: 30px;
     }
+    &__phone {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
     &__social {
         display: flex;
         justify-content: space-evenly;
@@ -59,5 +64,6 @@
     }
     &__website {
         text-decoration: none;
+        border-right: none;
     }
 }
